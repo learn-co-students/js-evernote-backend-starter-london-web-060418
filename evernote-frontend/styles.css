@@ -7,8 +7,8 @@
     }
 
     .wrapper > * {
-        border: 2px solid #f08c00;
-        background-color: #ffec99;
+        border: 1px solid #88e08f;
+        background-color: white;
         border-radius: 5px;
         padding: 10px;
     }
@@ -20,7 +20,13 @@
     }
 .main-head {
   grid-area: header;
+  color: #333
 }
+
+#create {
+  display: block;
+}
+
 .content {
   grid-area: content;
 }
@@ -31,6 +37,7 @@
 .main-footer {
   grid-area: footer;
 }
+
 .wrapper {
   display: grid;
   grid-gap: 20px;
@@ -57,11 +64,13 @@
   }
 
   ul div {
-    border: 1px solid black;
-    background: lightgray;
-    text-align: center;
-    font-size: initial;
-    padding: 3px;
+    border: 1px solid white;
+border-radius: 4px;
+background: #88e08f;
+text-align: center;
+font-size: initial;
+color: #333;
+padding: 3px;
   }
 }
 

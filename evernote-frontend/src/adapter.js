@@ -18,7 +18,7 @@ class Adapter {
       headers:{'Content-type':'application/json'}
     })
     .then(res => res.json())
-    .then(json => console.log(json))
+    .then(Adapter.getNotes())
   }
 
   static deleteNote(id) {
@@ -38,6 +38,5 @@ class Adapter {
     .then(res => res.json())
     .then(json => renderNote(json))
     .then(note => putNoteOnMain(note))
-
   }
 }
